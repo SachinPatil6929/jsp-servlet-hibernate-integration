@@ -1,0 +1,57 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  <servlet-name>CreateStudent</servlet-name>
+  <servlet-class>com.prowings.controller.CreateStudentController</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>GetStudent</servlet-name>
+  <servlet-class>controller.GetStudentRollNum</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>ListStudent</servlet-name>
+  <servlet-class>controller.ListStudent</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>UpdateStudent</servlet-name>
+  <servlet-class>controller.UpdateStudentController</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>DeleteStudent</servlet-name>
+  <servlet-class>controller.DeleteStudent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>CreateStudent</servlet-name>
+  <url-pattern>/addStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>GetStudent</servlet-name>
+  <url-pattern>/getStudentroll</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>ListStudent</servlet-name>
+  <url-pattern>/getStudentlist</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>UpdateStudent</servlet-name>
+  <url-pattern>/updateStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>DeleteStudent</servlet-name>
+  <url-pattern>/deleteStudent</url-pattern>
+  </servlet-mapping>
+</web-app>
